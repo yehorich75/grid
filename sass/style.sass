@@ -1,0 +1,29 @@
+*, *:before, *after 
+    box-sizing: border-box
+    
+body 
+    background-color: #dfdfdf
+    font-family: sans-serif
+    margin: 0
+    padding: 0
+
+.header
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "header-logo header-nav header-contacts"
+    grid-row: 1fr
+    width: 100vw
+    &-logo
+        grid-area: header-logo
+    &-nav 
+        grid-area: header-nav
+    &-contacts
+        grid-area: header-contacts
+
+.hero
+    display: grid
+    grid-template-areas: ". hero-title ."
+    height: 100vh
+    align-items: center
+    &-title
+        grid-area: hero-title

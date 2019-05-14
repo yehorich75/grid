@@ -1,0 +1,57 @@
+*, *:before, *after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfdf;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "header-logo header-nav header-contacts";
+  -ms-grid-row: 1;
+  grid-row: 1fr;
+  width: 100vw;
+}
+
+.header-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header-logo;
+}
+
+.header-nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header-nav;
+}
+
+.header-contacts {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: header-contacts;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". hero-title .";
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hero-title;
+}
+/*# sourceMappingURL=style.css.map */
