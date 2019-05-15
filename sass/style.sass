@@ -2,7 +2,7 @@
     box-sizing: border-box
     
 body 
-    background-color: #dfdfdf
+    background-color: #37474F
     font-family: sans-serif
     margin: 0
     padding: 0
@@ -11,8 +11,7 @@ body
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-areas: "header-logo header-nav header-contacts"
-    grid-row: 1fr
-    width: 100vw
+    height: 6vw
     &-logo
         grid-area: header-logo
     &-nav 
@@ -22,8 +21,21 @@ body
 
 .hero
     display: grid
-    grid-template-areas: ". hero-title ."
-    height: 100vh
-    align-items: center
-    &-title
-        grid-area: hero-title
+    grid-template-areas: ". hero-img ." ". hero-text ."
+    grid-template-columns: 1fr 4fr 1fr
+    grid-template-rows: repeat(2, 1fr)
+    height: 90vh
+    justify-items: center
+    &-img
+        grid-area: hero-img
+        grid-column: 2 / 3
+        align-self: center
+    &-text
+        grid-column: 2 / 3
+        text-align: center
+        &__title
+            grid-area: hero-title
+            color: white
+            font-size: 4em
+        &__subtitle
+            grid-area: hero-subtitle
