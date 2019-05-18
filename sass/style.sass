@@ -3,7 +3,7 @@
     
 body 
     background-color: #37474F
-    font-family: sans-serif
+    font-family: 'Montserrat', sans-serif
     margin: 0
     padding: 0
 
@@ -11,6 +11,7 @@ body
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-areas: "header-logo header-nav header-contacts"
+    align-items: center
     height: 6vw
     &-logo
         grid-area: header-logo
@@ -37,5 +38,13 @@ body
             grid-area: hero-title
             color: white
             font-size: 4em
+            font-weight: 400
+            margin-bottom: 0
         &__subtitle
             grid-area: hero-subtitle
+            color: #31C5F0
+            font-size: 2em
+            text-transform: lowercase
+            letter-spacing: 2px
+            font-weight: 300
+            margin-top: 0
