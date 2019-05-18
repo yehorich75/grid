@@ -34,10 +34,20 @@ body {
   grid-area: header-nav;
 }
 
+.header-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header-contacts {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: header-contacts;
+}
+
+.header-contacts a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .hero {
